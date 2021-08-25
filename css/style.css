@@ -1,11 +1,69 @@
 *{
+    /*for setting margin and padding to zero*/
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 .homeGradient{
-    position: relative;
+    /* background for home page */
     width: 100%;
     height: 100vh;
     background: linear-gradient(116.09deg, #FEFDFF 28.83%, #BED9FF 95.11%);
+    display: flex;
+}
+
+.name{
+    /* name on home page */
+    position: absolute;
+    width: auto;
+    left: 840px;
+    top: 190px;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    color: #000000;
+    backdrop-filter: blur(4px);
+}
+
+.tagline{
+    /* Creative Designer */
+    position: absolute;
+    width: auto;
+    left: 840px;
+    top: 345px;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    color: #4285F4;
+}
+.tagline:hover{text-decoration: underline;}
+
+.homeGradient .homePic{
+    /* logo on home page */
+    position: absolute;
+    height: 310px;
+    width: 465px;
+    align-self: flex-end;
+    margin-bottom: 15px;
+    right: 40px;
+}
+
+.homeGradient .smallDots{
+    /* small dots on home page */
+    position: relative;
+    width: 200px;
+    height: 177px;
+    top: 416px;
+}
+
+.homeGradient .self{
+    /* our pic on home page */
+    position: absolute;
+    height: 365px;
+    width: 375px;
+    top: 163px;
+    left: 124px;
 }
