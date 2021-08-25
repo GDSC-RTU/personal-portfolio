@@ -1,3 +1,11 @@
-body{
-    background-color: #ddd;
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.homeGradient{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(116.09deg, #FEFDFF 28.83%, #BED9FF 95.11%);
 }
