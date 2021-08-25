@@ -9,3 +9,24 @@
     height: 100vh;
     background: linear-gradient(116.09deg, #FEFDFF 28.83%, #BED9FF 95.11%);
 }
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    position: sticky;
+}
+.btn{
+    display: flex;
+    font-family: -webkit-pictograph;
+    padding: 4px 9px;
+    border: 0;
+    border-radius: 4px;
+    background-color: rgba(255, 217, 0, 0.63);
+    color: rgb(107, 106, 106);
+}
+.btn:hover{
+    background-color:gold;
+    color: black;
+}
