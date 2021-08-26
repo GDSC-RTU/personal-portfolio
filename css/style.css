@@ -2,68 +2,102 @@
     /*for setting margin and padding to zero*/
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
 }
 
-.homeGradient{
-    /* background for home page */
+body{
+    overflow-x: hidden;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+}
+
+.page{
     width: 100%;
     height: 100vh;
+}
+
+.home{
     background: linear-gradient(116.09deg, #FEFDFF 28.83%, #BED9FF 95.11%);
-    display: flex;
+}
+
+.col-lg-6{
+    position: relative;
+}
+
+.self, .dots{
+    position: absolute;
+}
+
+.self{
+    width: 60%;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.dots{
+    z-index: 0;
+    top: 60%;
+}
+
+.illus-1{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 70%;
+}
+
+.title{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-40%, -40%);
+    font-family: 'Poppins';
+    font-size: 70px;
+    font-weight: 600;
 }
 
 .name{
-    /* name on home page */
-    position: absolute;
-    width: auto;
-    left: 840px;
-    top: 190px;
-    font-family: Poppins;
-    font-style: normal;
-    font-size: 50px;
-    display: flex;
-    color: #000000;
-    backdrop-filter: blur(4px);
+    line-height: 80px;
 }
 
 .tagline{
-    /* Creative Designer */
-    position: absolute;
-    width: auto;
-    left: 840px;
-    top: 345px;
-    font-family: Poppins;
-    font-style: normal;
-    font-size: 40px;
-    display: flex;
-    color: #4285F4;
-}
-.tagline:hover{text-decoration: underline;}
-
-.homeGradient .homePic{
-    /* logo on home page */
-    position: absolute;
-    height: 310px;
-    width: 465px;
-    align-self: flex-end;
-    margin-bottom: 15px;
-    right: 40px;
+    color: #4285F4
 }
 
-.homeGradient .smallDots{
-    /* small dots on home page */
-    position: relative;
-    width: 200px;
-    height: 177px;
-    top: 416px;
+@media (max-width: 992px){
+    .title{
+        width: 100%;
+        position: absolute;
+        top: -20%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        font-size: 35px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .name{
+        line-height: 30px;
+    }
+    .col-12{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+    .self{
+        position: relative;
+        width: 80%;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+
+    }
 }
 
-.homeGradient .self{
-    /* our pic on home page */
-    position: absolute;
-    height: 365px;
-    width: 375px;
-    top: 163px;
-    left: 124px;
-}
