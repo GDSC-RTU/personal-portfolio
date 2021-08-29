@@ -1,120 +1,122 @@
-*{
-    /*for setting margin and padding to zero*/
-    margin: 0%;
-    padding: 0%;
+* {
+  /*for setting margin and padding to zero*/
+  margin: 0%;
+  padding: 0%;
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
-.row{
+.row {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+}
+
+.home {
+  background: linear-gradient(116.09deg, #FEFDFF 28.83%, #BED9FF 95.11%);
+}
+
+.col-lg-6 {
+  position: relative;
+}
+
+.self, .dots {
+  position: absolute;
+}
+
+.self {
+  width: 60%;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.dots {
+  z-index: 0;
+  top: 60%;
+}
+
+.illus-1 {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 70%;
+}
+
+.title {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-40%, -40%);
+  font-family: 'Poppins';
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.name {
+  line-height: 80px;
+}
+
+.tagline {
+  color: #4285F4
+}
+
+@media (max-width: 992px) {
+  .title {
     width: 100%;
-    height: 100%;
-}
-
-.page{
-    width: 100%;
-    height: 100vh;
-}
-
-.home{
-    background: linear-gradient(116.09deg, #FEFDFF 28.83%, #BED9FF 95.11%);
-}
-
-.col-lg-6{
-    position: relative;
-}
-
-.self, .dots{
     position: absolute;
-}
-
-.self{
-    width: 60%;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-}
-
-.dots{
-    z-index: 0;
-    top: 60%;
-}
-
-.illus-1{
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    width: 70%;
-}
-
-.title{
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    transform: translate(-40%, -40%);
-    font-family: 'Poppins';
-    font-size: 70px;
+    top: -20%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    font-size: 35px;
     font-weight: 600;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
 
-.name{
-    line-height: 80px;
-}
+  .name {
+    line-height: 30px;
+  }
 
-.tagline{
-    color: #4285F4
-}
+  .col-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
 
-@media (max-width: 992px){
-    .title{
-        width: 100%;
-        position: absolute;
-        top: -20%;
-        left: 0%;
-        transform: translate(0%, 0%);
-        font-size: 35px;
-        font-weight: 600;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
-    .name{
-        line-height: 30px;
-    }
-    .col-12{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
-    }
-    .self{
-        position: relative;
-        width: 80%;
-        top: 0;
-        left: 0;
-        transform: translate(0, 0);
-
-    }
+  .self {
+    position: relative;
+    width: 80%;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
 }
 
 /* Contact Page */
-
-.contact-info{
+.contact-info {
   margin: 0px;
-  margin-top: 20px;
+  margin-top: 40px;
+  height: 55px;
   border: 2px solid #4285F4 !important;
   box-sizing: border-box;
   border-radius: 15px !important;
 }
 
-#contact-me{
+#contact-me {
   background: linear-gradient(77.79deg, #FFFFFF 15.95%, #E1EDFF 92.17%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   padding: 9% 2%;
+  padding: 9% 2%;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
@@ -123,23 +125,47 @@ body{
   color: #2F2F2F;
 }
 
-form{
+form {
   padding: 5%;
   width: 70%;
   height: 100%;
   background: #FFFFFF;
-border: 1px solid #FFFFFF;
-box-sizing: border-box;
-box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.1);
-border-radius: 20px;
-margin: auto;
-/* display: flex;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: auto;
+  /* display: flex;
 flex-direction: column;
 align-items: center; */
 }
 
-.illus-hi{
-width: 631.44px;
-height: 500px;
-padding-top: 5%;
+.illus-hi {
+  width: 631.44px;
+  height: 500px;
+  padding-top: 5%;
+}
+
+.submit-button {
+  position: relative;
+  left: 150px;
+  top: 60px;
+}
+
+@media (max-width: 992px) {
+
+  .submit-button {
+    top: 0.2px;
+    left: 65px;
+  }
+
+form{
+  margin-top: 7%;
+  height: 90%;
+  width: 90%;
+}
+
+#contact-me{
+  padding-top: 10%;
+}
 }
