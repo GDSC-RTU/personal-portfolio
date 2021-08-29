@@ -344,8 +344,8 @@ body{
         top: 154px;
     }
     .para{
-        width: 378px;
-        height: 460px;
+        width: 300px;
+        height: 400px;
         left: 20px;
         top: 229px;
     }
@@ -436,19 +436,19 @@ body{
 
 
 /* Contact Page */
-
-.contact-info{
+.contact-info {
   margin: 0px;
-  margin-top: 20px;
+  margin-top: 40px;
+  height: 55px;
   border: 2px solid #4285F4 !important;
   box-sizing: border-box;
   border-radius: 15px !important;
 }
 
-#contact-me{
+#contact-me {
   background: linear-gradient(77.79deg, #FFFFFF 15.95%, #E1EDFF 92.17%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   padding: 9% 2%;
+  padding: 9% 2%;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
@@ -457,24 +457,52 @@ body{
   color: #2F2F2F;
 }
 
-form{
+form {
   padding: 5%;
   width: 70%;
   height: 100%;
   background: #FFFFFF;
-border: 1px solid #FFFFFF;
-box-sizing: border-box;
-box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.1);
-border-radius: 20px;
-margin: auto;
-/* display: flex;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: auto;
+  /* display: flex;
 flex-direction: column;
 align-items: center; */
 }
 
-.illus-hi{
-width: 631.44px;
-height: 500px;
-padding-top: 5%;
+.illus-hi {
+  width: 631.44px;
+  height: 500px;
+  padding-top: 5%;
 }
 
+.submit-button {
+  position: relative;
+  left: 150px;
+  top: 60px;
+  background: #4285F4 !important;
+  box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 14px !important;
+}
+
+@media (max-width: 992px) {
+  .submit-button {
+    top: 0.2px;
+    left: 65px;
+    background: #4285F4 !important;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 14px !important;
+  }
+
+  form {
+    margin-top: 7%;
+    height: 90%;
+    width: 90%;
+  }
+
+  #contact-me {
+    padding-top: 10%;
+  }
+}
