@@ -153,21 +153,16 @@ align-items: center; */
 }
 
 @media (max-width: 992px) {
-  .illus-hi {
-    position: relative;
-    left: 140px;
-    bottom: 90px;
-    height: 100px;
-    width: 100px;
-  }
 
   .submit-button {
     top: 15px;
-    left: 70px;
+    left: 40px;
   }
 
 form{
   margin-top: 7%;
+  height: 90%;
+  width: 80%;
 }
 
 #contact-me{
