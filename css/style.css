@@ -8,7 +8,7 @@ body{
     overflow-x: hidden;
 }
 
-.row{
+.home-row{
     width: 100%;
     height: 100%;
 }
@@ -103,17 +103,18 @@ body{
 
 .about-page{
     position: relative;
-    width: 1440px;
-    height: 1024px;
     background: linear-gradient(59.95deg, #FDFDFF 32.24%, #BED8FF 97.88%);
 }
 
+.abt-container{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
 .abt{
-    position: absolute;
-    width: 201px;
-    height: 96px;
-    left: 105px;
-    top: 202px;
+    padding-top: 80px;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -125,207 +126,46 @@ body{
     color: #4285F4;
 }
 .line{
-    position: absolute;
-    width: 265px;
-    height: 0px;
-    left: 105px;
-    top: 298px;
-
+    display: block;
+    width: 270px;
+    margin-bottom: 30px;
     border: 5px solid #4285F4;
 }
 .para{
-    position: absolute;
-    width: 512px;
-    height: 460px;
-    left: 105px;
-    top: 368px;
-
-    font-family: Roboto;
+    text-align: justify;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
-
     color: #1E1E1E;
+    width: 90%;
 }
-.skill1{
-    position: absolute;
-    width: 38px;
-    height: 23px;
-    left: 834px;
-    top: 368px;
-
-    font-family: Roboto;
+.skill{
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-
-    color: #000000;
-
-}
-.skill2{
-    position: absolute;
-    width: 38px;
-    height: 23px;
-    left: 834px;
-    top: 408px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-
-    color: #000000;
-
-}
-.skill3{
-    position: absolute;
-    width: 38px;
-    height: 23px;
-    left: 834px;
-    top: 448px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-
-    color: #000000;
-
-}
-.skill4{
-    position: absolute;
-    width: 38px;
-    height: 23px;
-    left: 834px;
-    top: 488px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-
     color: #000000;
 }
-.rec39{
+.rotate-abt{
     position: absolute;
-    width: 200px;
-    height: 15px;
-    left: 911px;
-    top: 372px;
-
-    background: #FFFFFF;
-    border-radius: 20px;
-}
-.rec40{
-    position: absolute;
-    width: 170px;
-    height: 15px;
-    left: 911px;
-    top: 372px;
-
-    background: #4285F4;
-    border-radius: 20px;
-}
-.rec41{
-    position: absolute;
-    width: 200px;
-    height: 15px;
-    left: 911px;
-    top: 412px;
-
-    background: #FFFFFF;
-    border-radius: 20px;
-}
-.rec42{
-    position: absolute;
-    width: 150px;
-    height: 15px;
-    left: 911px;
-    top: 412px;
-
-    background: #4285F4;
-    border-radius: 20px;
-}
-.rec43{
-    position: absolute;
-    width: 200px;
-    height: 15px;
-    left: 911px;
-    top: 452px;
-
-    background: #FFFFFF;
-    border-radius: 20px;
-}
-.rec44{
-    position: absolute;
-    width: 130px;
-    height: 15px;
-    left: 911px;
-    top: 452px;
-
-    background: #4285F4;
-    border-radius: 20px;
-}
-.rec45{
-    position: absolute;
-    width: 200px;
-    height: 15px;
-    left: 911px;
-    top: 492px;
-
-    background: #FFFFFF;
-    border-radius: 20px;
-}
-.rec46{
-    position: absolute;
-    width: 160px;
-    height: 15px;
-    left: 911px;
-    top: 492px;
-
-    background: #4285F4;
-    border-radius: 20px;
-}
-.card{
-    position: absolute;
-    width: 919px;
-    height: 307px;
-    left: 1501px;
-    top: -69px;
-
+    top: 30%;
+    right: -5%;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 180px;
-    line-height: 270px;
-    display: flex;
-    align-items: center;
+    font-size: 200px;
     text-align: center;
-
     color: rgba(255, 255, 255, 0.4);
-
     transform: rotate(90deg);
 }
+
 .bigdot{
     position: absolute;
-    width: 221px;
-    height: 195px;
-    left: 973px;
-    top: 703px;
+    left: 0;
+    bottom: 10%;
 }
+
 @media (max-width: 992px) {
     .about-page{
         width: 100%;
