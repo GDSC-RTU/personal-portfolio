@@ -10,8 +10,11 @@ body {
   min-height: 100vh;
   width: 100vw;
   background: linear-gradient(180deg, #c0d9ff 0%, #ffffff 100%);
+  background-repeat: no-repeat;
 }
-li {
+
+/* ----------------------------header section---------------------- */
+/* li {
   list-style: none;
 }
 li > a {
@@ -41,7 +44,9 @@ li > a {
 }
 .social_links > ul > li {
   margin-left: 2.5rem;
-}
+} */
+/* ----------------------------header section---------------------- */
+
 /* --------------------------main-------------------------- */
 main {
   display: flex;
@@ -73,4 +78,75 @@ main {
   font-weight: 500;
   font-size: 50px;
   line-height: 75px;
+}
+/* -------------- media queries ----------------- */
+
+@media (max-width: 926px) {
+  .oops {
+    font-size: 3.5rem;
+    /* line-height: 6rem; */
+  }
+  .fourZeroFour > span {
+    margin: 0 3.5rem;
+    font-size: 15rem;
+    /* line-height: 15rem; */
+  }
+  .pnf {
+    font-size: 2.5rem;
+    /* line-height: 4rem; */
+  }
+  .fourZeroFour > img {
+    height: 15rem;
+  }
+}
+@media (max-width: 796px) {
+  .oops {
+    font-size: 3rem;
+    /* line-height: 6rem; */
+  }
+  .fourZeroFour > span {
+    margin: 0 3rem;
+    font-size: 12rem;
+    /* line-height: 15rem; */
+  }
+  .pnf {
+    font-size: 2rem;
+    /* line-height: 4rem; */
+  }
+  .fourZeroFour > img {
+    height: 12rem;
+  }
+}
+@media (max-width: 636px) {
+  .fourZeroFour > span {
+    margin: 0 2rem;
+    font-size: 10rem;
+    /* line-height: 15rem; */
+  }
+
+  .fourZeroFour > img {
+    height: 10rem;
+  }
+}
+@media (max-width: 514px) {
+  .fourZeroFour > span {
+    margin: 0 1rem;
+    font-size: 10rem;
+    line-height: 14rem;
+  }
+
+  .fourZeroFour > img {
+    height: 10rem;
+  }
+}
+@media (max-width: 420px) {
+  .fourZeroFour > span {
+    /* margin: 0 0.5rem; */
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+
+  .fourZeroFour > img {
+    height: 8rem;
+  }
 }
