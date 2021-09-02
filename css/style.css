@@ -23,6 +23,40 @@ body{
     background: linear-gradient(116.09deg, #FEFDFF 28.83%, #BED9FF 95.11%);
 }
 
+.cursor{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #232323;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+.cursor2{
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background-color: #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+    z-index: 999;
+}
+
+.taglineHover{
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #c6c6c6;
+    opacity: .5;
+}
+
 .col-lg-6{
     position: relative;
 }
@@ -183,6 +217,8 @@ form {
   border-radius: 14px !important;
 }
 
+
+
 @media (max-width: 992px){
     .title{
         width: 100%;
@@ -257,38 +293,4 @@ form {
 
 }
 
-.cursor{
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #c6c6c6;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: 0.1s;
-}
 
-.cursor2{
-    position: fixed;
-    width: 8px;
-    height: 8px;
-    background-color: #c6c6c6;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: 0.15s;
-}
-
-.tagline:hover ~ .cursor{
-    transform: translate(-50%, -50%) scale(1.5);
-    background-color: #c6c6c6;
-    opacity: .5;
-}
-
-.tagline:hover ~ .cursor2{
-    opacity: 0;
-}
