@@ -1,0 +1,46 @@
+#maindesign{
+    width: 100%;
+    min-height: 100vh; 
+    /* background: linear-gradient(180.35deg, #E2EDFF 0.83%, #FFFFFF 99.7%); */
+}
+.hd {
+    background: #c1cdec;
+    height: 150px;
+}
+
+.blghd{
+    position:absolute;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 50px;
+    top: 30px;
+    margin: 0px;
+    left: 50px;
+}
+
+.blghd2{
+    position: absolute;
+    font-family: Poppins;
+    font-style: normal;
+    top: 100px;
+    font-weight: lighter;
+    font-size: 23px;
+    margin: 0px;
+    left: 53px;
+}
+
+.design {
+    position: absolute;
+    bottom: 0px;
+}
+
+.design img{
+    width: 103%;
+}
+
+.txt{
+    margin: 40px;
+    font-family: Roboto;
+    font-size: 24px;
+}
+
