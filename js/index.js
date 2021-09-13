@@ -1,6 +1,7 @@
 let cursor = document.querySelector(".cursor");
 let cursor2 = document.querySelector(".cursor2");
 let tagline = document.querySelector('.tagline')
+const scrollTop = document.querySelector(".scrollTop");
 
 document.addEventListener('mousemove', function(e){
   cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
@@ -18,4 +19,7 @@ tagline.addEventListener('mouseleave', () => {
   cursor2.style.display = 'block'
 })
 
+scrollTop.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+})
 
