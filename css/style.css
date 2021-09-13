@@ -174,315 +174,62 @@ html{
 
 /* blog page */
 #blog{
-    background: linear-gradient(89.86deg, #FFFFFF 1.64%, #E1EDFF 90.48%), 
+    background: linear-gradient(89.86deg, #FFFFFF 1.64%, #E1EDFF 90.48%),
     linear-gradient(84.95deg, #FFFFFF 23.66%, #E1EDFF 87.67%);
-    width: 100%;
-    min-height: 100vh; 
-    margin-left: 100px;
+    padding: 0 3%;
 }
 
-.heading{
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 130px;
-    color: rgba(66, 133, 244, 0.2);
-    margin-left: 40px;    
+.blog-image{
+  width: 350px;
+  height: 233.56px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.blog-heading{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 200px;
+  /* line-height: 300px; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(66, 133, 244, 0.2);
+  margin-bottom: 90px;
+
 }
 
-.blogPic{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+.blog-para{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 60px;
 }
 
-.content{
-    margin: 8px 50px; 
+@media (max-width: 992px) {
+  .blog-image{
+    width: 300px;
+    height: 200px;
+  }
+
+  .blog-heading{
+    font-size: 110px;
+    margin-bottom: 60px;
 }
 
-.content img{
-    height: 195px;
-    width: 315px;
-    border-radius: 15px;
+#blog{
+  padding: 0 2% 1%;
+  text-align: center;
 }
 
-.content p{
-    width: 330px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0px 10px;
+.blog-para{
+  margin-bottom: 40px;
+  font-size: 22px;
+}
 }
 
-/* responsive blog page */
-
-@media(max-width:2560px){
-    #blog{
-        box-sizing: border-box;
-    }
-
-    .blogPic{
-        margin: 0px;
-        margin-left: 50px;
-        box-sizing: border-box;
-    }
-
-    .heading{
-        font-size: 250px;
-    }
-
-    .content{
-        margin: 15px 125px;
-    }
-
-    .content p{
-        font-size: 2.3rem;
-        width: 530px;
-    }
-
-    .content img{
-        height: 350px;
-        width: 550px;
-    }
-}
-
-@media(max-width:1536px){
-    #blog{
-        background: linear-gradient(89.86deg, #FFFFFF 1.64%, #E1EDFF 90.48%), 
-        linear-gradient(84.95deg, #FFFFFF 23.66%, #E1EDFF 87.67%);
-        width: 100%;
-        min-height: 100vh; 
-        margin-left: 100px;
-    }
-
-    .heading{
-        font-family: Poppins;
-        font-weight: bold;
-        font-size: 130px;
-        color: rgba(66, 133, 244, 0.2);
-        margin-left: 40px;    
-    }
-
-    .blogPic{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .content{
-        margin: 8px 50px; 
-    }
-
-    .content img{
-        height: 195px;
-        width: 315px;
-        border-radius: 15px;
-}
-
-    .content p{
-        width: 330px;
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        margin: 0px 10px;
-    }
-}
-
-@media(max-width:1440px){
-    #blog{
-        width:100%;
-        margin: 0px;
-        padding: 0px 30px;
-    }
-
-    .content{
-        margin: 15px 55px;
-    }
-
-    .blogPic {
-        width: 100%;
-    }
-    .heading{
-        font-size: 100px;
-    }
-}
-
-@media(max-width : 1024px){
-    #blog{
-        box-sizing: border-box;
-        padding: 0px 56px;
-        width: 100vw;
-        height: auto;
-        margin: 0px;
-    }
-
-    .blogPic{
-        width: 100%;
-        margin: 0px;
-    }
-
-    .heading{
-        font-size: 100px;
-        margin: 0px;
-        text-align: center;
-    }
-
-    .content{
-        margin: 13px 17px ;
-    }
-
-    .content img{
-        height: 180px;
-        width: 270px;
-        /* margin: 0px 15px; */
-    }
-
-    .content p{
-        width: 249px;
-    }
-}
-
-@media(max-width : 768px){
-    #blog{
-        box-sizing: border-box;
-        padding: 0px 80px;
-        width: 100vw;
-        height: auto;
-        margin: 0px;
-    }
-
-    .blogPic{
-        width: auto;
-        margin: 0px;
-    }
-
-    .heading{
-        font-size: 100px;
-        margin: 0px;
-        text-align: center;
-    }
-
-    .content{
-        margin: 13px 17px ;
-    }
-
-    .content img{
-        height: 180px;
-        width: 270px;
-    }
-
-    .content p{
-        width: 249px;
-    }
-}
-
-@media(max-width : 425px){
-    #blog{
-        box-sizing: border-box;
-        padding: 0px 80px;
-        width: 100vw;
-        height: auto;
-        margin: 0px;
-    }
-
-    .blogPic{
-        width: auto;
-        margin: 0px;
-
-        /* justify-content: center; */
-    }
-
-    .heading{
-        font-size: 100px;
-        margin: 0px;
-    }
-
-    .content{
-        margin: 13px 0px ;
-
-    }
-
-    .content img{
-        height: 180px;
-        width: 270px;
-    }
-
-    .content p{
-        width: 249px;
-    }
-}
-
-@media(max-width : 375px){
-    #blog{
-        width: 100%;
-        height: auto;
-        margin: 0px;
-        padding: 0px 53px;
-        box-sizing: border-box;
-    }
-
-    .blogPic{
-        width: auto;
-      
-    }
-
-    .heading{
-        font-size: 90px;
-        margin: 0px;
-        text-align: center;
-    }
-
-    .content{
-        margin: 0px;
-        margin: 12px 0px;
-    }
-
-    .content img{
-        height: 180px;
-        width: 270px;
-    }
-
-    .content p{
-        width: 250px;
-    }
-}
-
-@media(max-width : 320px){
-    #blog{
-        width: 100%;
-        height: auto;
-        margin: 0px;
-        padding: 26px;
-        box-sizing: border-box;
-    }
-
-    .blogPic{
-        width: auto;
-        margin: 12px 0px;
-        /* justify-content: center; */
-    }
-
-    .heading{
-        font-size: 80px;
-        margin: 0px;
-        text-align: center;
-    }
-
-    .content{
-        margin: 0px;
-        margin: 12px 0px;
-    }
-
-    .content img{
-        height: 180px;
-        width: 270px;
-    }
-
-    .content p{
-        width: 250px;
-    }
-}
 
 /* Contact Page */
 .contact-info {
@@ -549,11 +296,11 @@ form {
         align-items: center;
         text-align: left;
     }
-    
+
     .name{
         line-height: 30px;
     }
-    
+
     .home-row .col-12{
         display: flex;
         align-items: center;
@@ -596,18 +343,20 @@ form {
         box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.1) !important;
         border-radius: 14px !important;
     }
-    
+
     form {
         margin-top: 7%;
         height: 90%;
         width: 90%;
     }
-    
+
     #contact-me {
         padding-top: 10%;
     }
 
 }
+
+
 
 .scrollTop{
     position: fixed;
@@ -626,4 +375,5 @@ form {
 .scrollTop:hover {
     transform: scale(1);
 }
+
 
