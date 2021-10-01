@@ -5,7 +5,7 @@ This repository contains the code of a personal portfolio website created by the
 Check this project live here - [Portfolio Website](http://gdsc-rtu.github.io/personal-portfolio)
 
 ## Project Structure - 
-
+```
 Root
 |____/css
        |____style.css
@@ -21,6 +21,7 @@ Root
 |____404.html
 |____LICENSE.md
 |____README.md
+```
 
 ## Contribution Guidelines
 
