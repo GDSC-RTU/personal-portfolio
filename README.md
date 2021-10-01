@@ -23,6 +23,12 @@ Root
 |____README.md
 ```
 
+## Contributors
+
+<a href="https://github.com/GDSC-RTU/personal-portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=GDSC-RTU/personal-portfolio" />
+</a>
+
 ## Contribution Guidelines
 
 ### For the members of GDSC RTU Organization - 
