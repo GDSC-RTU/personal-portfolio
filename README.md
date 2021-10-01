@@ -2,6 +2,26 @@
 
 This repository contains the code of a personal portfolio website created by the core team members of GDSC RTU. 
 
+Check this project live here - [Portfolio Website](http://gdsc-rtu.github.io/personal-portfolio)
+
+## Project Structure - 
+
+Root
+|____/css
+       |____style.css
+       |____blogDesign.css
+       |____404.css
+|____/images
+       |____/Favicon
+|____/js
+       |____index.js
+|____index.html
+|____manifest.json
+|____blog1.html
+|____404.html
+|____LICENSE.md
+|____README.md
+
 ## Contribution Guidelines
 
 ### For the members of GDSC RTU Organization - 
