@@ -44,13 +44,17 @@ git clone https://github.com/GDSC-RTU/personal-portfolio.git
 cd personal-portfolio
 ```
 This command will move your control in the "personal-portfolio" project.
+
 5. In your terminal write - 
 ```
 git pull
 ```
 Though this is not required but this would ensure that you have the latest version of code available in your local folder.
+
 6. Code. Code. Code...
+
 7. After you've added all the parts that you wanted to, it's time to push the code on the repository. 
+
 8. Add the files by writing  - 
 ```
 git add .
@@ -60,6 +64,7 @@ git add .
 git commit -m "I'm a sample message"
 ```
 Note - Add relevant commit messages. For e.g. if you worked on the dark mode, you should write "added dark mode feature".
+
 10. Push the code
 ```
 git push
