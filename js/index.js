@@ -23,3 +23,22 @@ scrollTop.addEventListener("click", function () {
   window.scrollTo(0, 0);
 })
 
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector(".navbar");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navbar.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".navbar-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navbar.classList.remove("active");
+}
+
